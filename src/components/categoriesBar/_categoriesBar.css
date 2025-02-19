@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #16181b;
+  background-attachment: fixed;
+  color: #b1bdb4;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1px;
+}
+
+.categories_bar {
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+  display: flex;
+  overflow-x: scroll;
+}
+.categories_bar::-webkit-scrollbar {
+  width: 0px;
+}
+.categories_bar span {
+  margin-right: 1rem;
+  padding: 0.5rem;
+  white-space: nowrap;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.0784313725);
+  color: #b1bdb4;
+  cursor: pointer;
+}
+.categories_bar span:hover {
+  background-color: #374a59;
+}
+.categories_bar span.active {
+  color: #fff;
+  background-color: #606060;
+}
+
+/*# sourceMappingURL=_categoriesBar.css.map */

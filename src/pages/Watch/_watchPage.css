@@ -1,0 +1,24 @@
+.watchPage__container {
+  min-width: 345px;
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.watchPage__player {
+  height: 60vh;
+  background-color: #353946;
+  width: 100%;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+}
+.watchPage__player iframe {
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=_watchPage.css.map */

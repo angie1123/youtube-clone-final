@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #16181b;
+  background-attachment: fixed;
+  color: #b1bdb4;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1px;
+}
+
+.videoMetaData {
+  align-items: center;
+  width: 100%;
+}
+.videoMetaData__top h5 {
+  color: whitesmoke;
+}
+.videoMetaData button {
+  background-color: rgba(255, 255, 255, 0.0784313725);
+  border: none;
+  color: #b1bdb4;
+  padding: 10px 15px;
+  border-radius: 9999px;
+  font-size: 13px;
+}
+.videoMetaData span {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.videoMetaData__channel {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-shrink: none;
+}
+.videoMetaData__channel > .left__side {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+.videoMetaData__channel > .left__side > img {
+  width: 40px;
+  border-radius: 50px;
+}
+.videoMetaData__channel > .left__side > .channel-details {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  row-gap: 3px;
+  margin: 0 24px 0 12px;
+}
+.videoMetaData__channel > .left__side > .channel-details > .channel-title {
+  font-size: 16px;
+  display: flex;
+}
+.videoMetaData__channel > .left__side > .channel-details > .subscribe-data {
+  font-size: 12px;
+}
+.videoMetaData__channel > .right__side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.videoMetaData__channel > .right__side > .channel-group-btn .btn-subscribe {
+  color: #000000;
+  background-color: whitesmoke;
+}
+.videoMetaData__channel > .right__side > .video-related-btn {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-right: 10px;
+}
+.videoMetaData__channel > .right__side > .video-related-btn > .btn-thumbs {
+  display: flex;
+  align-items: center;
+}
+.videoMetaData__description {
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.0784313725);
+  border-radius: 5px;
+  padding: 10px;
+}
+.videoMetaData__description .watch-info {
+  display: flex;
+  column-gap: 10px;
+  color: white;
+}
+.videoMetaData__description .show-more-less-clickable {
+  display: block;
+  margin: 1rem 0;
+}
+.videoMetaData__description .description-content {
+  color: whitesmoke;
+  line-height: 1.5;
+}
+.videoMetaData__description .description-content span {
+  display: block;
+}
+.videoMetaData__description .description-content br {
+  display: none;
+}
+
+/*# sourceMappingURL=_videoMetaData.css.map */

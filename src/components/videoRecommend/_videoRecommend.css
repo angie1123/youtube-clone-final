@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #16181b;
+  background-attachment: fixed;
+  color: #b1bdb4;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1px;
+}
+
+.videoHorizontal {
+  box-sizing: border-box;
+  display: flex;
+  cursor: pointer;
+  min-width: 380px;
+  padding-right: 5px;
+}
+.videoHorizontal__left {
+  position: relative;
+  padding-left: 0 !important;
+  width: 45%;
+}
+.videoHorizontal__right {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.videoHorizontal__thumbnail {
+  flex-shrink: none;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+}
+.videoHorizontal__thumbnail-wrapper {
+  width: 100%;
+}
+.videoHorizontal__duration {
+  position: absolute;
+  bottom: 0.6rem;
+  right: 1.2rem;
+  font-size: 0.7rem;
+  padding: 0.1rem;
+  background: rgba(8, 8, 8, 0.9254901961);
+  border-radius: 3px;
+}
+.videoHorizontal__details {
+  font-size: 12px;
+  column-gap: 5px;
+}
+.videoHorizontal__title {
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 0.3px;
+  line-height: 1.2rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.videoHorizontal__desc {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  font-size: 12px;
+  margin: 0;
+  flex-wrap: nowrap;
+}
+.videoHorizontal__channel {
+  display: flex;
+  align-items: center;
+}
+.videoHorizontal__channel img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+.videoHorizontal__channel p {
+  font-size: 12px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+@media (max-width: 767px) {
+  .videoHorizontal {
+    font-size: 0.8rem;
+  }
+  .videoHorizontal__details {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: nowrap;
+  }
+  .videoHorizontal__channel {
+    margin: 0.1rem 0;
+  }
+  .videoHorizontal__channel img {
+    width: 10px;
+    display: none;
+  }
+  .videoHorizontal__channel p {
+    font-size: 0.8rem;
+  }
+  .videoHorizontal__desc {
+    display: none;
+  }
+  .videoHorizontal__title {
+    font-size: 0.9rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+}
+
+/*# sourceMappingURL=_videoRecommend.css.map */

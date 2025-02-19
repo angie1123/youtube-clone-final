@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #16181b;
+  background-attachment: fixed;
+  color: #b1bdb4;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1px;
+}
+
+.comment {
+  display: flex;
+  margin-bottom: 12px;
+  width: 100%;
+}
+.comment .comment__body {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.comment .comment__body .comment__middle {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.comment .comment__body form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.comment .comment__body form input {
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-right: none;
+  color: whitesmoke;
+  outline: none;
+}
+.comment .comment__body form input:focus {
+  border-bottom: 1px solid white;
+  outline: 0;
+}
+.comment .comment__body form .form__btn {
+  display: flex;
+  justify-content: end;
+  height: 40px;
+  column-gap: 20px;
+}
+.comment .comment__body form .form__btn button {
+  border-radius: 25px;
+  padding: 0 15px;
+  background-color: rgba(255, 255, 255, 0.0784313725);
+  color: whitesmoke;
+  border: none;
+}
+.comment .comment__body .dropdown__button {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+.comment img {
+  height: 40px;
+  margin-right: 16px;
+  border-radius: 50%;
+}
+.comment__header {
+  margin-bottom: 3px;
+}
+.comment .comment__username {
+  font-size: 13px;
+  margin-right: 5px;
+  color: white;
+}
+.comment .comment__time {
+  font-size: 12px;
+}
+.comment__content {
+  font-size: 14px;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+/*# sourceMappingURL=_comment.css.map */
