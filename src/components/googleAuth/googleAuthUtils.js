@@ -138,8 +138,8 @@ export const loadGisScript = () => {
     */
     if (window.google && window.google.accounts) {
     console.log("GIS library already loaded")
-      return resolve(window.google.accounts);//resolve is function provided by promise constructor
-      
+      resolve(window.google.accounts);//resolve is function provided by promise constructor
+      return
     }
     console.log("loading google identity services...")
     //if library not yet load, it create <script> element with src and set to  GIS library
