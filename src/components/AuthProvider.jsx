@@ -1,6 +1,7 @@
 import { createContext, useEffect, useState } from "react";
 import { auth } from "../firebase";
 import { getAccessToken } from "./googleAuth/googleAuthUtils";
+import PropTypes from "prop-types";
 
 export const AuthContext  =createContext()
 
@@ -86,3 +87,7 @@ export function AuthProvider({ children }) {
     </>
       )
 }
+
+AuthProvider.propTypes = {
+       children: PropTypes.node.isRequired, // Ensure children is required
+   };
