@@ -53,7 +53,7 @@ export const authenticateYouTube = async ({skipPrompt='false'}) => {
       if (!tokenClient) {
         // accounts.oauth2.initTokenClient Initializes an OAuth 2.0 token client using the GIS library.
         tokenClient = accounts.oauth2.initTokenClient({
-          client_id: '1002730959732-lc7vramqcgk63pbltqd1qh7ehl2llff6.apps.googleusercontent.com',
+          client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID,
           scope: 'https://www.googleapis.com/auth/youtube.force-ssl',
           /*The callback in the initTokenClient configuration is a function
            that is executed automatically when Google's OAuth 2.0 server sends
