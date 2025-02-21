@@ -20,9 +20,11 @@ export const loadGisScript = () => {
     such as initiating the sign-in process or configure One Tap login
     */
     if (window.google && window.google.accounts) {
+    console.log("GIS library already loaded")
       resolve(window.google.accounts);//resolve is function provided by promise constructor
       return;
     }
+    console.log("loading google identity services...")
     //if library not yet load, it create <script> element with src and set to  GIS library
 
     const script = document.createElement('script');
@@ -36,7 +38,10 @@ export const loadGisScript = () => {
     The promise is resolved with the value window.google.accounts.
     This means the GIS library is fully loaded, and the functionality
      provided by window.google.accounts is now available for use. */
-    script.onload = () => resolve(window.google.accounts);
+    script.onload = () => { 
+      console.log("Google API loaded successfully!")
+      resolve(window.google.accounts)
+    };
     script.onerror = () => reject(new Error('Failed to load Google Identity Services script'));
     document.head.appendChild(script);
   });
