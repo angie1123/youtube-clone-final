@@ -3,7 +3,7 @@ import request from "../api";
 import axios from "axios";
 // import axios from "axios";
 
-const API_URL = `https://9f3a53d0-6f2d-4bd1-a909-f60c23bbdd52-00-idqqdijsxsxb.sisko.replit.dev`
+const API_URL = `https://youtube-clone-postgres-api.vercel.app`
 
 export const getCommentsByVideoIdYoutubeAPI = createAsyncThunk(
   'comments/getCommentsByVideoIdYoutubeAPI',

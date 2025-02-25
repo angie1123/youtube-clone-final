@@ -30,7 +30,7 @@ export default function WatchPage() {
 const addVideoToPostgresVideos = async (id) => {
     try {
       if (videoData ) {
-        const API_URL = `https://9f3a53d0-6f2d-4bd1-a909-f60c23bbdd52-00-idqqdijsxsxb.sisko.replit.dev`
+        const API_URL = `https://youtube-clone-postgres-api.vercel.app`
         const videoTitle = videoData?.snippet.localized.title
         // console.log(videoTitle)
          await axios.post(`${API_URL}/addVideo/${id}`, { videoTitle } )
